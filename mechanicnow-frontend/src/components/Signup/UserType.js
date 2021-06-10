@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function Who() {
+function UserType() {
     return(
         <div>
             <h2>Who Are You?</h2>
@@ -12,4 +12,4 @@ function Who() {
     )
 }
 
-export default Who;
+export default UserType;

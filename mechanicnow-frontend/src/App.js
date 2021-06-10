@@ -11,7 +11,7 @@ import {
 import Landing from './components/Landing/Landing';
 import OwnerReq from './components/OwnerReq';
 import OwnerNav from './components/OwnerNav';
-import Who from './components/Signup/Who'
+import UserType from './components/Signup/UserType'
 import OwnerDashboard from './components/OwnerDashboard/OwnerDashboard';
 import MechanicSignup from './components/MechanicSignup/MechanicSignup';
 
@@ -20,7 +20,7 @@ function App() {
     <Router>
     <div>
       <Route exact path="/" component={Landing} />
-      <Route path="/who" component={Who} />
+      <Route path="/usertype" component={UserType} />
       <Route path="/ownerreq" component={OwnerReq} />
       <Route path="/ownernav" component={OwnerNav} />
       <Route path="/ownerdashboard" component={OwnerDashboard} />
