@@ -12,6 +12,8 @@ import Landing from './components/Landing/Landing';
 import OwnerReq from './components/OwnerReq';
 import OwnerNav from './components/OwnerNav';
 import Who from './components/Signup/Who'
+import OwnerDashboard from './components/OwnerDashboard/OwnerDashboard';
+import MechanicSignup from './components/MechanicSignup/MechanicSignup';
 
 function App() {
   return (
@@ -19,13 +21,13 @@ function App() {
     <div>
       <Route exact path="/" component={Landing} />
       <Route path="/who" component={Who} />
-      <Route path="/OwnerReq" component={OwnerReq} />
-      <Route path="/OwnerNav" component={OwnerNav} />
+      <Route path="/ownerreq" component={OwnerReq} />
+      <Route path="/ownernav" component={OwnerNav} />
+      <Route path="/ownerdashboard" component={OwnerDashboard} />
+      <Route path="/mechanicsignup" component={MechanicSignup} />
     </div>
     </Router>
   );
 }
-
-
 
 export default App;
