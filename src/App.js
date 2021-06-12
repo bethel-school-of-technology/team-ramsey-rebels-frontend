@@ -8,12 +8,12 @@ import {
   Link
 } from "react-router-dom";
 
-import Landing from './components/Landing/Landing';
-import OwnerReq from './components/OwnerReq';
-import OwnerNav from './components/OwnerNav';
-import UserType from './components/Signup/UserType'
-import OwnerDashboard from './components/OwnerDashboard/OwnerDashboard';
-import MechanicSignup from './components/MechanicSignup/MechanicSignup';
+import Landing from './components/Landing';
+import OwnerReq from './components/Owner/OwnerReq';
+import OwnerNav from './components/Owner/OwnerNav';
+import UserType from './components/UserType'
+import OwnerDashboard from './components/Owner/OwnerDashboard';
+import MechanicSignup from './components/Mechanic/MechanicNav';
 
 function App() {
   return (
