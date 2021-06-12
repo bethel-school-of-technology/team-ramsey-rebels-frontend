@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import OwnerNav from '../OwnerNav';
+import OwnerNav from './OwnerNav';
 
 
 
