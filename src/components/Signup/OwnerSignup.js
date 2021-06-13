@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 
-const MechanicSignup = () => (
+const OwnerSignup = () => (
   <div>
     <form>
       <label>Full Name</label>
@@ -12,15 +12,15 @@ const MechanicSignup = () => (
       <input type="text" id="businessName" /><br />
       <label>Phone</label>
       <input type="text" id="phone" /><br />
-      <Link to="/mechanicdashboard" className="">
+      <Link to="/ownerdashboard" className="">
        Create my account
        </Link>
     </form>
   </div>
 );
 
-MechanicSignup.propTypes = {};
+OwnerSignup.propTypes = {};
 
-MechanicSignup.defaultProps = {};
+OwnerSignup.defaultProps = {};
 
-export default MechanicSignup;
+export default OwnerSignup;
