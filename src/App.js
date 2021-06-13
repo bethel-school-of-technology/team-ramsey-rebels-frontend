@@ -13,8 +13,9 @@ import OwnerReq from './components/Owner/OwnerReq';
 import OwnerNav from './components/Owner/OwnerNav';
 import UserType from './components/UserType'
 import OwnerDashboard from './components/Owner/OwnerDashboard';
-import MechanicSignup from './components/Mechanic/MechanicNav';
+import MechanicSignup from './components/Signup/MechanicSignup';
 import MechanicDashboard from './components/Mechanic/MechanicDashboard';
+import OwnerSignup from './components/Signup/OwnerSignup';
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
       <Route path="/ownernav" component={OwnerNav} />
       <Route path="/ownerdashboard" component={OwnerDashboard} />
       <Route path="/mechanicsignup" component={MechanicSignup} />
-      <Route path="/mechanic_dashboard" component={MechanicDashboard} />
+      <Route path="/mechanicdashboard" component={MechanicDashboard} />
+      <Route path="/ownersignup" component={OwnerSignup} />
     </div>
     </Router>
   );

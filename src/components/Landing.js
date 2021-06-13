@@ -12,9 +12,10 @@ const Landing = () => (
     <div>
     Welcome to MechanicNow
     </div>
-    <button onClick={tempAlert}>
-      Sign In with Google
-    </button>
+    <Link to="/usertype" className="">
+    Sign In with Google
+    </Link>
+
   </div>
 );
 
