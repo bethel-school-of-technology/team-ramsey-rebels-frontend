@@ -1,3 +1,21 @@
+* {
+  background-color: #3b3b3b;
+  color: whitesmoke;
+  text-align: center;
+}
+
+h2 {
+  color: rgb(26, 25, 25);
+}
+
+.mechnav{
+  align-items: flex-start;
+}
+
+.margin{
+  margin-left: 5px;
+}
+
 .App {
   text-align: center;
 }

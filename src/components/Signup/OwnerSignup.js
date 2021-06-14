@@ -2,6 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+function tempAlert(){
+  alert('temporary alert function');
+};
 
 const OwnerSignup = () => (
   <div>
@@ -24,3 +27,4 @@ OwnerSignup.propTypes = {};
 OwnerSignup.defaultProps = {};
 
 export default OwnerSignup;
+

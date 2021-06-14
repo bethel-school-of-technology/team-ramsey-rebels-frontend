@@ -16,8 +16,9 @@ import OwnerDashboard from './components/Owner/OwnerDashboard';
 import MechanicSignup from './components/Signup/MechanicSignup';
 import MechanicDashboard from './components/Mechanic/MechanicDashboard';
 import OwnerSignup from './components/Signup/OwnerSignup';
+import MechanicNav from './components/Mechanic/MechanicNav';
+import AvailableJobs from './components/Mechanic/AvailableJobs';
 import MechanicDataTest from './components/MechanicDataTest'
-
 
 function App() {
   return (
@@ -28,9 +29,13 @@ function App() {
       <Route path="/ownerreq" component={OwnerReq} />
       <Route path="/ownernav" component={OwnerNav} />
       <Route path="/ownerdashboard" component={OwnerDashboard} />
+      <Route path="/owner_signup" component={OwnerSignup} />
       <Route path="/mechanicsignup" component={MechanicSignup} />
+      <Route path="/mechanicnav" component={MechanicNav} />
       <Route path="/mechanicdashboard" component={MechanicDashboard} />
       <Route path="/ownersignup" component={OwnerSignup} />
+      <Route path="/availablejobs" component={AvailableJobs} />
+      <Route path="/landing" component={Landing} />
       <Route path="/mechanicdatatest" component={MechanicDataTest} />
     </div>
     </Router>
