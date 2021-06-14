@@ -16,6 +16,8 @@ import OwnerDashboard from './components/Owner/OwnerDashboard';
 import MechanicSignup from './components/Signup/MechanicSignup';
 import MechanicDashboard from './components/Mechanic/MechanicDashboard';
 import OwnerSignup from './components/Signup/OwnerSignup';
+import MechanicDataTest from './components/MechanicDataTest'
+
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
       <Route path="/mechanicsignup" component={MechanicSignup} />
       <Route path="/mechanicdashboard" component={MechanicDashboard} />
       <Route path="/ownersignup" component={OwnerSignup} />
+      <Route path="/mechanicdatatest" component={MechanicDataTest} />
     </div>
     </Router>
   );
