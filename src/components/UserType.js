@@ -9,9 +9,9 @@ function UserType() {
             <hr></hr>
             <Link to="/ownersignup" className="">
             Car Owner
-            </Link> || 
-            <Link to="/mechanicsignup" className="">
-            Mechanic
+            </Link> | 
+            <Link to="/mechanicsignup" className="margin">
+             Mechanic
             </Link>
         </div>
     )
