@@ -26,7 +26,9 @@ function App() {
       <Route path="/ownerreq" component={OwnerReq} />
       <Route path="/ownernav" component={OwnerNav} />
       <Route path="/ownerdashboard" component={OwnerDashboard} />
+      <Route path="/owner_signup" component={OwnerSignup} />
       <Route path="/mechanicsignup" component={MechanicSignup} />
+
       <Route path="/mechanicdashboard" component={MechanicDashboard} />
       <Route path="/ownersignup" component={OwnerSignup} />
     </div>
