@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
-function tempAlert(){
-  alert('temporary alert function');
-};
 
 const MechanicSignup = () => (
   <div>
@@ -14,7 +12,9 @@ const MechanicSignup = () => (
       <input type="text" id="businessName" /><br />
       <label>Phone</label>
       <input type="text" id="phone" /><br />
-      <button onClick={tempAlert}>Submit</button>
+      <Link to="/mechanicdashboard" className="">
+       Create my account
+       </Link>
     </form>
   </div>
 );

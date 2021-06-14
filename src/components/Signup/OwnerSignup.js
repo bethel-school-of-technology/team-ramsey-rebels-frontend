@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 function tempAlert(){
   alert('temporary alert function');
@@ -10,11 +11,13 @@ const OwnerSignup = () => (
     <form>
       <label>Full Name</label>
       <input type="text" id="name" /><br />
-      <label>Make</label>
+      <label>Business Name</label>
       <input type="text" id="businessName" /><br />
-      <label>Model</label>
+      <label>Phone</label>
       <input type="text" id="phone" /><br />
-      <button onClick={tempAlert}>Submit</button>
+      <Link to="/ownerdashboard" className="">
+       Create my account
+       </Link>
     </form>
   </div>
 );
@@ -24,3 +27,4 @@ OwnerSignup.propTypes = {};
 OwnerSignup.defaultProps = {};
 
 export default OwnerSignup;
+
