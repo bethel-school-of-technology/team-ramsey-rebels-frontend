@@ -1,23 +1,23 @@
-import firebase from "../firebase";
+// import firebase from "../firebase";
 
-const db = firebase.collection("/mechanics");
+// const db = firebase.collection("/mechanics");
 
-class MechanicDataService {
-  getAll() {
-    return db;
-  }
+// class MechanicDataService {
+//   getAll() {
+//     return db;
+//   }
 
-  create(mechanic) {
-    return db.add(mechanic);
-  }
+//   create(mechanic) {
+//     return db.add(mechanic);
+//   }
 
-  update(id, value) {
-    return db.doc(id).update(value);
-  }
+//   update(id, value) {
+//     return db.doc(id).update(value);
+//   }
 
-  delete(id) {
-    return db.doc(id).delete();
-  }
-}
+//   delete(id) {
+//     return db.doc(id).delete();
+//   }
+// }
 
-export default new MechanicDataService();
+// export default new MechanicDataService();
