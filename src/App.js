@@ -24,9 +24,7 @@ function App() {
       <Route path="/myrequests" component={MyRequests} />
       <Route path="/admin" component={Admin} />
       <Route path="/success" component={Success} />
-
       <Route path="/requestdatatest" component={RequestDataTest} />
-
     </div>
     </Router>
   );
