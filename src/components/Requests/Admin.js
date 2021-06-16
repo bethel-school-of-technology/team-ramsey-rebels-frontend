@@ -34,7 +34,7 @@ return (
         <Nav />
         <h1>All Requests:</h1>
         {requests.map((request) => (
-        <div key={request.key}>
+        <div key={request.fullName}>
         <h6>{request.fullName} | {request.email} | {request.phone} {request.vehicle} | {request.location} | {request.serviceType}</h6>
         <hr />
         </div>
