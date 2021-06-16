@@ -1,21 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-
-  function tempAlert(){
-    alert("You just clicked to sign in.");
-  };
+import Nav from './Nav/Nav';
 
 const Landing = () => (
 
   <div>
-    <div>
-    Welcome to MechanicNow
-    </div>
-    <Link to="/usertype" className="">
-    Sign In with Google
-    </Link>
-
+    <Nav />
+    <h1>
+    Welcome to MechanicNow!
+    </h1>
+    <h3>
+      Find your way to mechanical nirvana with our industry-standard tire changes and lubrication services.
+    </h3>
   </div>
 );
 
