@@ -1,6 +1,7 @@
 import React from 'react';
 import firebase from 'firebase';
 import AllRequestsInput from './AllRequestsInput';
+import Nav from '../Nav/Nav';
 
 function AllRequestsUpdate() {
     const [requests, setRequests] = React.useState([])
@@ -16,14 +17,15 @@ function AllRequestsUpdate() {
 
 return (
     <div>
-        <h1>Update service requests here:</h1>
-    <ul>
+        <Nav />
+        <h1>Current Service Requests:</h1>
+    <div>
         {requests.map(request => (
-            <li key={request.serviceType}>
+            <p key={request.serviceType}>
                 <AllRequestsInput request={request} />
-                </li>
+                </p>
         ))}
-    </ul>
+    </div>
     </div>
 );
 }

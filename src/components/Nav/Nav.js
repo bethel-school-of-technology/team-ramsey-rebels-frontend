@@ -11,9 +11,8 @@ const Nav = () => (
     <div>
 
       <Link to="/" className="">Home |</Link>
-      <Link to="/newrequest" className="">New Request |</Link>
-      <Link to="/myrequests" className="">My Requests |</Link>
-      <Link to="/admin" className="">Admin</Link>
+      <Link to="/newrequest" className=""> New Request |</Link> 
+      <Link to="/admin" className=""> Admin</Link>
         <br />
         <hr />
     </div>
