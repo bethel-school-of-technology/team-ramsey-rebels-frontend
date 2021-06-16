@@ -20,6 +20,7 @@ import MechanicNav from './components/Mechanic/MechanicNav';
 import AvailableJobs from './components/Mechanic/AvailableJobs';
 import MechanicDataTest from './components/MechanicDataTest';
 import OwnerDataTest from './components/OwnerDataTest';
+import RequestDataTest from './components/RequestDataTest';
 
 function App() {
   return (
@@ -37,8 +38,7 @@ function App() {
       <Route path="/ownersignup" component={OwnerSignup} />
       <Route path="/availablejobs" component={AvailableJobs} />
       <Route path="/landing" component={Landing} />
-      <Route path="/mechanicdatatest" component={MechanicDataTest} />
-      <Route path="/ownerdatatest" component={OwnerDataTest} />
+      <Route path="/requestdatatest" component={RequestDataTest} />
     </div>
     </Router>
   );
