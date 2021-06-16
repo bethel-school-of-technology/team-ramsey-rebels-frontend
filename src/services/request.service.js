@@ -1,14 +1,14 @@
 import firebase from "../firebase";
 
-const db = firebase.firestore().collection("mechanics");
+const db = firebase.firestore().collection("requests");
 
-class MechanicDataService {
+class RequestDataService {
   getAll() {
     return db;
   }
 
-  create(mechanic) {
-    return db.add(mechanic);
+  create(request) {
+    return db.add(request);
   }
 
   update(id, value) {
@@ -20,4 +20,4 @@ class MechanicDataService {
   }
 }
 
-export default new MechanicDataService();
+export default new RequestDataService();
