@@ -13,6 +13,7 @@ import RequestDataTest from './components/RequestDataTest';
 import MyRequests from './components/Requests/MyRequests';
 import Admin from './components/Requests/Admin';
 import Success from './components/Requests/Success';
+import AllRequestsUpdate from './components/Requests/AllRequestsUpdate';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Route path="/success" component={Success} />
 
       <Route path="/requestdatatest" component={RequestDataTest} />
+      <Route path="/allrequestsupdate" component={AllRequestsUpdate} />
 
     </div>
     </Router>

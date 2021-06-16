@@ -183,11 +183,11 @@ export default class NewRequest extends Component {
                 name="serviceType"
               />
             </div>
-            <a href="/success">
+
             <button onClick={this.saveRequest} className="btn btn-success">
               Submit
             </button>
-            </a>
+
       </div>
     );
   }
