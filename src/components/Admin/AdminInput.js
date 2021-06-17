@@ -1,7 +1,7 @@
 import React from 'react';
 import firebase from 'firebase';
 
-const AllRequestsInput = ({request}) => {
+const AdminInput = ({request}) => {
 const [serviceType, setServiceType] = React.useState(request.serviceType);
 
 const onUpdate = () => {
@@ -28,4 +28,4 @@ const onDelete = () => {
 
 }
 
-export default AllRequestsInput;
+export default AdminInput;

@@ -1,9 +1,9 @@
 import React from 'react';
 import firebase from 'firebase';
-import AllRequestsInput from './AllRequestsInput';
+import AdminInput from './AdminInput';
 import Nav from '../Nav/Nav';
 
-function AllRequestsUpdate() {
+function Admin() {
     const [requests, setRequests] = React.useState([])
 
     React.useEffect(() => {
@@ -30,7 +30,7 @@ return (
     <div>
         {requests.map(request => (
             <div key={request.serviceType}>
-                <AllRequestsInput request={request} />
+                <AdminInput request={request} />
                 </div>
         ))}
     </div>
@@ -39,4 +39,4 @@ return (
 );
 }
 
-export default AllRequestsUpdate;
+export default Admin;

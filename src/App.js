@@ -9,10 +9,9 @@ import {
 
 import Landing from './components/Landing';
 import NewRequest from './components/Requests/NewRequest';
-import MyRequests from './components/Requests/MyRequests';
-import Admin from './components/Requests/Admin';
+import Admin from './components/Admin/Admin';
 import Success from './components/Requests/Success';
-import AllRequestsUpdate from './components/Requests/AllRequestsUpdate';
+import About from './components/About/About';
 
 function App() {
   return (
@@ -20,10 +19,12 @@ function App() {
     <div>
       <Route exact path="/" component={Landing} />
       <Route path="/newrequest" component={NewRequest} />
+      <Route path="service" component={NewRequest} />
       <Route path="/landing" component={Landing} />
-      <Route path="/myrequests" component={MyRequests} />
-      <Route path="/admin" component={AllRequestsUpdate} />
+      <Route path="/admin" component={Admin} />
       <Route path="/success" component={Success} />
+      <Route path="/about" component={About} />
+
     </div>
     </Router>
   );
