@@ -22,10 +22,8 @@ function App() {
       <Route path="/newrequest" component={NewRequest} />
       <Route path="/landing" component={Landing} />
       <Route path="/myrequests" component={MyRequests} />
-      <Route path="/admin" component={Admin} />
+      <Route path="/admin" component={AllRequestsUpdate} />
       <Route path="/success" component={Success} />
-      <Route path="/allrequestsupdate" component={AllRequestsUpdate} />
-
     </div>
     </Router>
   );
