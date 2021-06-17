@@ -13,6 +13,7 @@ const Landing = () => (
     <h3>
       Find your way to mechanical nirvana with our industry-standard tire changes and lubrication services.
     </h3>
+    <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&w=1000&q=80" alt="nicecar"/>
   </div>
 );
 
