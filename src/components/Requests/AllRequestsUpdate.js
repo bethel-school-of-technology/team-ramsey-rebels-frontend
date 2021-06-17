@@ -3,8 +3,12 @@ import firebase from 'firebase';
 import AllRequestsInput from './AllRequestsInput';
 import Nav from '../Nav/Nav';
 
+
 function AllRequestsUpdate() {
-    const [requests, setRequests] = React.useState([])
+    const [requests, setRequests] = React.useState([]);
+    const refreshPage = () => {
+        window.location.reload();
+    }
 
     React.useEffect(() => {
         const fetchData = async() => {
@@ -26,6 +30,7 @@ return (
                 </p>
         ))}
     </div>
+    <button onClick = {refreshPage}>Refresh Page</button>
     </div>
 );
 }
