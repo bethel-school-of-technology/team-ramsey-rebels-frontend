@@ -13,6 +13,7 @@ import RequestDataTest from './components/RequestDataTest';
 import MyRequests from './components/Requests/MyRequests';
 import Admin from './components/Requests/Admin';
 import Success from './components/Requests/Success';
+import AllRequestsUpdate from './components/Requests/AllRequestsUpdate';
 
 function App() {
   return (
