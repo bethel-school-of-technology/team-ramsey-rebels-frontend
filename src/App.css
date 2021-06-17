@@ -8,6 +8,10 @@ h2 {
   color: rgb(26, 25, 25);
 }
 
+.nav {
+  margin-left: 5px;
+}
+
 .mechnav{
   align-items: flex-start;
 }

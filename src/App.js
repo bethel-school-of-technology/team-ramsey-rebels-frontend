@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -8,11 +7,27 @@ import {
   Link
 } from "react-router-dom";
 
+import Landing from './components/Landing';
+import NewRequest from './components/Requests/NewRequest';
+import RequestDataTest from './components/RequestDataTest';
+import MyRequests from './components/Requests/MyRequests';
+import Admin from './components/Requests/Admin';
+import Success from './components/Requests/Success';
+import AllRequestsUpdate from './components/Requests/AllRequestsUpdate';
+
 function App() {
   return (
     <Router>
     <div>
-     
+      <Route exact path="/" component={Landing} />
+      <Route path="/newrequest" component={NewRequest} />
+      <Route path="/landing" component={Landing} />
+      <Route path="/myrequests" component={MyRequests} />
+      <Route path="/admin" component={Admin} />
+      <Route path="/success" component={Success} />
+      <Route path="/requestdatatest" component={RequestDataTest} />
+      <Route path="/allrequestsupdate" component={AllRequestsUpdate} />
+
     </div>
     </Router>
   );
