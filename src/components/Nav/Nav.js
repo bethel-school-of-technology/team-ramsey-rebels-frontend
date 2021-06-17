@@ -8,11 +8,11 @@ const Nav = () => (
       <Link to="/" className="nav">
         Home 
       </Link> |
-      <Link to="/newrequest" className="nav">
-        New Request 
+      <Link to="/about" className="nav">
+        About 
       </Link> |
-      <Link to="/myrequests" className="nav">
-        My Requests 
+      <Link to="/newrequest" className="nav">
+        Service
       </Link> |
       <Link to="/admin" className="nav">
         Admin
