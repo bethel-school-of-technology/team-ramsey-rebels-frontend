@@ -1,8 +1,6 @@
 import React from 'react';
 import firebase from 'firebase';
 
-
-
 const AllRequestsInput = ({request}) => {
 const [serviceType, setServiceType] = React.useState(request.serviceType);
 
@@ -17,11 +15,15 @@ const onDelete = () => {
 }
 
     return (<>
-    <p>{request.fullName} | {request.email} | {request.phone} | 
-    <input value={serviceType} onChange={(e) => {setServiceType(e.target.value)}}/>
+    <p><b>Request ID: </b>{request.id}</p>
+    <p>{request.fullName} | {request.email} | {request.phone}</p>
+    <p>{request.vehicle} | {request.location}</p>
+    Service Needed: <input value={serviceType} onChange={(e) => {setServiceType(e.target.value)}}/>
+    <br />
     <button onClick={onUpdate}>Update</button>
     <button onClick={onDelete}>Delete</button>
-    </p>
+    <hr />
+
     </>)
 
 }
