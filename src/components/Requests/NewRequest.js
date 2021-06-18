@@ -89,11 +89,12 @@ export default class NewRequest extends Component {
     RequestDataService.create(data)
       .then(() => {
         console.log("Created new request successfully!");
-
+        window.location.href = "/success";
       })
       .catch((e) => {
         console.log(e);
       });
+
   }
 
   newRequest() {
