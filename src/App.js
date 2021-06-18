@@ -12,6 +12,7 @@ import NewRequest from './components/Requests/NewRequest';
 import Admin from './components/Admin/Admin';
 import Success from './components/Requests/Success';
 import About from './components/About/About';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

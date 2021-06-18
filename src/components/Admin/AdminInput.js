@@ -1,5 +1,6 @@
 import React from 'react';
 import firebase from 'firebase';
+import Button from 'react-bootstrap/Button';
 
 const AdminInput = ({request}) => {
 const [serviceType, setServiceType] = React.useState(request.serviceType);
@@ -22,8 +23,8 @@ const onDelete = () => {
     <p>{request.vehicle} | {request.location}</p>
     Service Needed: <input value={serviceType} onChange={(e) => {setServiceType(e.target.value)}}/>
     <br />
-    <button onClick={onUpdate}>Update</button>
-    <button onClick={onDelete}>Delete</button>
+    <Button variant="warning" onClick={onUpdate}>Update</Button>
+    <Button variant="danger" onClick={onDelete}>Delete</Button>
     <hr />
 
     </>)

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import RequestDataService from "../../services/request.service";
-import Nav from '../Nav/Nav';
+import Navigation from '../Nav/Navigation';
 
 export default class NewRequest extends Component {
   constructor(props) {
@@ -111,7 +111,7 @@ export default class NewRequest extends Component {
   render() {
     return (
       <div className="submit-form">
-          <Nav />
+          <Navigation />
             <div className="form-group">
               <label htmlFor="fullName">Full Name</label>
               <input

@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import Nav from './Nav/Nav';
+import Navigation from './Nav/Navigation';
 
 const Landing = () => (
 
   <div>
-    <Nav />
+    <Navigation />
     <h1>
     Welcome to MechanicNow!
     </h1>
