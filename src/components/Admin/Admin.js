@@ -4,20 +4,24 @@ import AdminInput from './AdminInput';
 import Nav from '../Nav/Nav';
 
 function Admin() {
-    const [requests, setRequests] = React.useState([])
+    const [requests, setRequests] = React.useState([]);
+    
+
 
     React.useEffect(() => {
         const fetchData = async() => {
         const db = firebase.firestore()
         const data = await db.collection("requests").get()
         setRequests(data.docs.map(doc => ({...doc.data(), id: doc.id})))
+        
     }
-    fetchData()
+    fetchData();
 }, [])
 
 const refreshPage = () => {
     window.location.reload();
 }
+
 
 return (
     <div>

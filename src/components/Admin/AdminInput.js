@@ -6,12 +6,14 @@ const [serviceType, setServiceType] = React.useState(request.serviceType);
 
 const onUpdate = () => {
 const db = firebase.firestore()
-db.collection('requests').doc(request.id).set({...request, serviceType})
+db.collection('requests').doc(request.id).set({...request, serviceType});
+
 }
 
 const onDelete = () => {
     const db = firebase.firestore()
-    db.collection('requests').doc(request.id).delete()
+    db.collection('requests').doc(request.id).delete();
+
 }
 
     return (<>
