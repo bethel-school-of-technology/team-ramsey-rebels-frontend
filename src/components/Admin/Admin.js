@@ -1,7 +1,8 @@
 import React from 'react';
 import firebase from 'firebase';
 import AdminInput from './AdminInput';
-import Nav from '../Nav/Nav';
+import Navigation from '../Nav/Navigation';
+import Button from 'react-bootstrap/Button';
 
 function Admin() {
     const [requests, setRequests] = React.useState([]);
@@ -25,10 +26,10 @@ const refreshPage = () => {
 
 return (
     <div>
-        <Nav />
+        <Navigation />
         <h1>Update service requests here:</h1>
         <div>
-        <button onClick={refreshPage}>Refresh Changes</button>
+        <Button variant="success" onClick={refreshPage}>Refresh Changes</Button>
     </div>
     <hr />
     <div>
@@ -37,6 +38,7 @@ return (
                 <AdminInput request={request} />
                 </div>
         ))}
+                <Button variant="success" onClick={refreshPage}>Refresh Changes</Button>
     </div>
 
     </div>
