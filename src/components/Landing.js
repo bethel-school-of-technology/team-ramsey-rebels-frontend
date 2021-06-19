@@ -9,10 +9,11 @@ const Landing = () => (
     <Navigation />
     <Container>
       <Row>
-        <Col>
+        <Col fluid>
           <h1>Welcome to MechanicNow!</h1>
         </Col>
       </Row>
+      <br />
       <Row>
         <Col>
           <Image
@@ -23,6 +24,7 @@ const Landing = () => (
           />
         </Col>
         <Col>
+        <br />
           <p>
             Find your way to mechanical nirvana with our industry-standard tire
             changes and lubrication services.
@@ -31,14 +33,15 @@ const Landing = () => (
       </Row>
       <br />
       <Row>
-        <Col>
+        <Col sm={6}>
+        <br />
           <p>
             There is no one happier to come work on your car than our
             trustworthy mechanics. They do whatever you ask them to do.
             Anything.
           </p>
         </Col>
-        <Col>
+        <Col sm={6}>
           <Image
             src="https://cdn.crello.com/api/media/small/392799810/stock-photo-selective-focus-happy-mechanic-overalls"
             roundedCircle

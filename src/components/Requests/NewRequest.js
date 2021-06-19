@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import RequestDataService from "../../services/request.service";
 import Navigation from "../Nav/Navigation";
+import { Container, Col, Row, Button } from "react-bootstrap";
 
 export default class NewRequest extends Component {
   constructor(props) {
@@ -111,82 +112,123 @@ export default class NewRequest extends Component {
     return (
       <div className="submit-form">
         <Navigation />
-        <div className="form-group">
-          <label htmlFor="fullName">Full Name</label>
-          <input
-            type="text"
-            className="form-control"
-            id="fullName"
-            required
-            value={this.state.fullName}
-            onChange={this.onChangeFullName}
-            name="fullName"
-          />
+        <div>
+          <h1>Request your service here:</h1>
         </div>
-        <div className="form-group">
-          <label htmlFor="email">Email</label>
-          <input
-            type="text"
-            className="form-control"
-            id="email"
-            required
-            value={this.state.email}
-            onChange={this.onChangeEmail}
-            name="Email"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="phone">Phone</label>
-          <input
-            type="text"
-            className="form-control"
-            id="phone"
-            required
-            value={this.state.phone}
-            onChange={this.onChangePhone}
-            name="phone"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="location">Location</label>
-          <input
-            type="text"
-            className="form-control"
-            id="location"
-            required
-            value={this.state.location}
-            onChange={this.onChangeLocation}
-            name="location"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="vehicle">Vehicle Make and Model</label>
-          <input
-            type="text"
-            className="form-control"
-            id="vehicle"
-            required
-            value={this.state.vehicle}
-            onChange={this.onChangeVehicle}
-            name="vehicle"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="serviceType">Type of Service</label>
-          <input
-            type="text"
-            className="form-control"
-            id="serviceType"
-            required
-            value={this.state.serviceType}
-            onChange={this.onChangeServiceType}
-            name="serviceType"
-          />
-        </div>
+        <Container>
+          <div className="form-group">
+            <Row>
+              <Col></Col>
+              <Col md={6}>
+                <label htmlFor="fullName">Full Name</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="fullName"
+                  required
+                  value={this.state.fullName}
+                  onChange={this.onChangeFullName}
+                  name="fullName"
+                />
+              </Col>
+              <Col></Col>
+            </Row>
+          </div>
 
-        <button onClick={this.saveRequest} className="btn btn-success">
+          <div className="form-group">
+            <Row>
+              <Col></Col>
+              <Col md={6}>
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="email"
+                  required
+                  value={this.state.email}
+                  onChange={this.onChangeEmail}
+                  name="Email"
+                />
+              </Col>
+              <Col></Col>
+            </Row>
+          </div>
+          <div className="form-group">
+            <Row>
+              <Col></Col>
+              <Col md={6}>
+                <label htmlFor="phone">Phone</label>
+                <input
+                  type="phone"
+                  className="form-control"
+                  id="phone"
+                  required
+                  value={this.state.phone}
+                  onChange={this.onChangePhone}
+                  name="phone"
+                />
+              </Col>
+              <Col></Col>
+            </Row>
+          </div>
+          <div className="form-group">
+            <Row>
+              <Col></Col>
+              <Col md={6}>
+                <label htmlFor="location">Location</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="location"
+                  required
+                  value={this.state.location}
+                  onChange={this.onChangeLocation}
+                  name="location"
+                />
+              </Col>
+              <Col></Col>
+            </Row>
+          </div>
+          <div className="form-group">
+            <Row>
+              <Col></Col>
+              <Col md={6}>
+                <label htmlFor="vehicle">Vehicle Make and Model</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="vehicle"
+                  required
+                  value={this.state.vehicle}
+                  onChange={this.onChangeVehicle}
+                  name="vehicle"
+                />
+              </Col>
+              <Col></Col>
+            </Row>
+          </div>
+          <div className="form-group">
+            <Row>
+              <Col></Col>
+              <Col md={6}>
+                <label htmlFor="serviceType">Type of Service</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="serviceType"
+                  required
+                  value={this.state.serviceType}
+                  onChange={this.onChangeServiceType}
+                  name="serviceType"
+                />
+              </Col>
+              <Col></Col>
+            </Row>
+          </div>
+        </Container>
+        <Button onClick={this.saveRequest} className="btn btn-success">
           Submit
-        </button>
+        </Button>
       </div>
     );
   }
