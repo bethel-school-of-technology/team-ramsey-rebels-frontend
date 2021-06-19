@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import RequestDataService from "../../services/request.service";
-import Navigation from '../Nav/Navigation';
+import Navigation from "../Nav/Navigation";
 
 export default class NewRequest extends Component {
   constructor(props) {
@@ -14,7 +14,7 @@ export default class NewRequest extends Component {
     this.saveRequest = this.saveRequest.bind(this);
     this.newRequest = this.newRequest.bind(this);
 
-//sets initial state of new Request class
+    //sets initial state of new Request class
 
     this.state = {
       fullName: "",
@@ -22,19 +22,19 @@ export default class NewRequest extends Component {
       phone: "",
       location: "",
       vehicle: "",
-      serviceType: ""
+      serviceType: "",
     };
   }
 
-//function changes state of 'fullName' property
+  //function changes state of 'fullName' property
 
   onChangeFullName(e) {
     this.setState({
-        fullName: e.target.value,
+      fullName: e.target.value,
     });
   }
 
-//function changes state of 'email' property
+  //function changes state of 'email' property
 
   onChangeEmail(e) {
     this.setState({
@@ -42,15 +42,15 @@ export default class NewRequest extends Component {
     });
   }
 
-//function changes state of 'phone' property
+  //function changes state of 'phone' property
 
   onChangePhone(e) {
     this.setState({
-        phone: e.target.value,
+      phone: e.target.value,
     });
   }
 
-//function changes state of 'location' property
+  //function changes state of 'location' property
 
   onChangeLocation(e) {
     this.setState({
@@ -83,7 +83,7 @@ export default class NewRequest extends Component {
       phone: this.state.phone,
       location: this.state.location,
       vehicle: this.state.vehicle,
-      serviceType: this.state.serviceType
+      serviceType: this.state.serviceType,
     };
 
     RequestDataService.create(data)
@@ -94,7 +94,6 @@ export default class NewRequest extends Component {
       .catch((e) => {
         console.log(e);
       });
-
   }
 
   newRequest() {
@@ -104,91 +103,90 @@ export default class NewRequest extends Component {
       phone: "",
       location: "",
       vehicle: "",
-      serviceType: ""
+      serviceType: "",
     });
   }
 
   render() {
     return (
       <div className="submit-form">
-          <Navigation />
-            <div className="form-group">
-              <label htmlFor="fullName">Full Name</label>
-              <input
-                type="text"
-                className="form-control"
-                id="fullName"
-                required
-                value={this.state.fullName}
-                onChange={this.onChangeFullName}
-                name="fullName"
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input
-                type="text"
-                className="form-control"
-                id="email"
-                required
-                value={this.state.email}
-                onChange={this.onChangeEmail}
-                name="Email"
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="phone">Phone</label>
-              <input
-                type="text"
-                className="form-control"
-                id="phone"
-                required
-                value={this.state.phone}
-                onChange={this.onChangePhone}
-                name="phone"
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="location">Location</label>
-              <input
-                type="text"
-                className="form-control"
-                id="location"
-                required
-                value={this.state.location}
-                onChange={this.onChangeLocation}
-                name="location"
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="vehicle">Vehicle Make and Model</label>
-              <input
-                type="text"
-                className="form-control"
-                id="vehicle"
-                required
-                value={this.state.vehicle}
-                onChange={this.onChangeVehicle}
-                name="vehicle"
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="serviceType">Type of Service</label>
-              <input
-                type="text"
-                className="form-control"
-                id="serviceType"
-                required
-                value={this.state.serviceType}
-                onChange={this.onChangeServiceType}
-                name="serviceType"
-              />
-            </div>
+        <Navigation />
+        <div className="form-group">
+          <label htmlFor="fullName">Full Name</label>
+          <input
+            type="text"
+            className="form-control"
+            id="fullName"
+            required
+            value={this.state.fullName}
+            onChange={this.onChangeFullName}
+            name="fullName"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input
+            type="text"
+            className="form-control"
+            id="email"
+            required
+            value={this.state.email}
+            onChange={this.onChangeEmail}
+            name="Email"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="phone">Phone</label>
+          <input
+            type="text"
+            className="form-control"
+            id="phone"
+            required
+            value={this.state.phone}
+            onChange={this.onChangePhone}
+            name="phone"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="location">Location</label>
+          <input
+            type="text"
+            className="form-control"
+            id="location"
+            required
+            value={this.state.location}
+            onChange={this.onChangeLocation}
+            name="location"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="vehicle">Vehicle Make and Model</label>
+          <input
+            type="text"
+            className="form-control"
+            id="vehicle"
+            required
+            value={this.state.vehicle}
+            onChange={this.onChangeVehicle}
+            name="vehicle"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="serviceType">Type of Service</label>
+          <input
+            type="text"
+            className="form-control"
+            id="serviceType"
+            required
+            value={this.state.serviceType}
+            onChange={this.onChangeServiceType}
+            name="serviceType"
+          />
+        </div>
 
-            <button onClick={this.saveRequest} className="btn btn-success">
-              Submit
-            </button>
-
+        <button onClick={this.saveRequest} className="btn btn-success">
+          Submit
+        </button>
       </div>
     );
   }
