@@ -23,7 +23,8 @@ const About = () => (
       </Row>
       <br />
       <Row>
-        <Col>
+        <Col></Col>
+        <Col sm={8}>
           <p>
             Thanks for choosing MechanicNow! We are a full service mobile
             mechanic service that comes to you. We are highly qualified in
@@ -34,6 +35,7 @@ const About = () => (
             happened.
           </p>
         </Col>
+        <Col></Col>
       </Row>
       <Row>
         <Col>
