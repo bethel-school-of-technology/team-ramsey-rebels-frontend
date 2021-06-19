@@ -6,12 +6,12 @@ const Navigation = () => (
     <Nav fill variant="tabs">
       <Nav.Item>
         <Nav.Link href="/" className="nav">
-          Home 
+          Home
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link href="/about" className="nav">
-          About 
+          About
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
@@ -24,9 +24,9 @@ const Navigation = () => (
           Admin
         </Nav.Link>
       </Nav.Item>
-      </Nav>
-      <br />
-      <hr />
+    </Nav>
+    <br />
+    <hr />
   </div>
 );
 
