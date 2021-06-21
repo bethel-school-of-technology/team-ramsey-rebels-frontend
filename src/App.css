@@ -1,3 +1,16 @@
+h2 {
+  color: #651fff;
+  justify-content: center;
+}
+
+.footer-p {
+  color: whitesmoke;
+}
+
+.margin{
+  margin-left: 5px;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +49,4 @@
     transform: rotate(360deg);
   }
 }
+
