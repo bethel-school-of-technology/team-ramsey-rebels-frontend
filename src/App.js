@@ -12,6 +12,8 @@ import NewRequest from './components/Requests/NewRequest';
 import Admin from './components/Admin/Admin';
 import Success from './components/Requests/Success';
 import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -25,7 +27,8 @@ function App() {
       <Route path="/admin" component={Admin} />
       <Route path="/success" component={Success} />
       <Route path="/about" component={About} />
-
+      <Route path="/contactus" component={Contact} />
+      <Footer />
     </div>
     </Router>
   );

@@ -1,19 +1,10 @@
-* {
-  background-color: #3b3b3b;
-  color: whitesmoke;
-  text-align: center;
-}
-
 h2 {
-  color: rgb(26, 25, 25);
+  color: #651fff;
+  justify-content: center;
 }
 
-.nav {
-  margin-left: 5px;
-}
-
-.mechnav{
-  align-items: flex-start;
+.footer-p {
+  color: whitesmoke;
 }
 
 .margin{

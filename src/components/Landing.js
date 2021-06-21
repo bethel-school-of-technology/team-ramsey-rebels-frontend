@@ -8,19 +8,14 @@ const Landing = () => (
   <div>
     <Navigation />
     <Container>
-      <Row>
-        <Col fluid>
-          <h1>Welcome to MechanicNow!</h1>
-        </Col>
-      </Row>
       <br />
       <Row>
         <Col>
           <Image
             src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&w=1000&q=80"
+            alt="nicecar"
             roundedCircle
             fluid
-            alt="nicecar"
           />
         </Col>
         <Col>

@@ -8,7 +8,7 @@ const About = () => (
     <Container>
       <Row>
         <Col>
-          <h1>About MechanicNow</h1>
+          <h2>About MechanicNow</h2>
         </Col>
       </Row>
       <br />
@@ -39,7 +39,7 @@ const About = () => (
       </Row>
       <Row>
         <Col>
-          <Button href="/newrequest">Schedule My Service</Button>
+          <Button href="/newrequest" className="btn btn-secondary">Schedule My Service</Button>
         </Col>
       </Row>
     </Container>
