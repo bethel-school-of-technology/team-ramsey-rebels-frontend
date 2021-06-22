@@ -23,14 +23,14 @@ function Admin() {
   return (
     <div>
       <Navigation />
-      <h1>Update service requests here:</h1>
-      <div>
+      <h2>Update service requests here:</h2>
+      <div className="refresh">
         <Button variant="success" onClick={refreshPage}>
           Refresh Changes
         </Button>
       </div>
       <hr />
-      <div>
+      <div className="requests">
         {requests.map((request) => (
           <div key={request.serviceType}>
             <AdminInput request={request} />

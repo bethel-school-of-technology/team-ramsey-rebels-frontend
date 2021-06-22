@@ -5,6 +5,11 @@ h2 {
 
 .footer-p {
   color: whitesmoke;
+  text-align: center;
+}
+
+.request, #submit, h2, .refresh, .requests {
+  text-align: center;
 }
 
 .margin{

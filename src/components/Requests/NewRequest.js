@@ -112,7 +112,7 @@ export default class NewRequest extends Component {
     return (
       <div className="submit-form">
         <Navigation />
-        <div>
+        <div className="request">
           <h2>New Service Request</h2>
         </div>
         <Container>
@@ -231,10 +231,12 @@ export default class NewRequest extends Component {
               <Col></Col>
             </Row>
           </div>
-          <Button onClick={this.saveRequest} className="btn btn-secondary">
-            Submit
-          </Button>
         </Container>
+        <div id="submit">
+        <Button onClick={this.saveRequest} className="btn btn-secondary">
+            Submit
+        </Button>
+        </div>
       </div>
     );
   }
