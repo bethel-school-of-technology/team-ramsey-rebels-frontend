@@ -12,8 +12,11 @@ import NewRequest from './components/Requests/NewRequest';
 import Admin from './components/Admin/Admin';
 import Success from './components/Requests/Success';
 import About from './components/About/About';
+<<<<<<< HEAD
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer';
+=======
+>>>>>>> main
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -27,8 +30,12 @@ function App() {
       <Route path="/admin" component={Admin} />
       <Route path="/success" component={Success} />
       <Route path="/about" component={About} />
+<<<<<<< HEAD
       <Route path="/contactus" component={Contact} />
       <Footer />
+=======
+
+>>>>>>> main
     </div>
     </Router>
   );

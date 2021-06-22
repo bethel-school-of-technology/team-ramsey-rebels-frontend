@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
@@ -13,6 +14,36 @@ const Navigation = () => (
         <Nav.Link href="/contactus">Contact Us</Nav.Link>
       </Nav>
     </Navbar>
+=======
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Nav from "react-bootstrap/Nav";
+const Navigation = () => (
+  <div>
+    <Nav fill variant="tabs">
+      <Nav.Item>
+        <Nav.Link href="/" className="nav">
+          Home
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="/about" className="nav">
+          About
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="/newrequest" className="nav">
+          Service
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="/admin" className="nav">
+          Admin
+        </Nav.Link>
+      </Nav.Item>
+    </Nav>
+    <br />
+    <hr />
+>>>>>>> main
   </div>
 );
 
