@@ -8,11 +8,7 @@ const About = () => (
     <Container>
       <Row>
         <Col>
-<<<<<<< HEAD
           <h2>About MechanicNow</h2>
-=======
-          <h1>About MechanicNow</h1>
->>>>>>> main
         </Col>
       </Row>
       <br />
@@ -43,11 +39,7 @@ const About = () => (
       </Row>
       <Row>
         <Col>
-<<<<<<< HEAD
-          <Button href="/newrequest" className="btn btn-secondary">Schedule My Service</Button>
-=======
           <Button href="/newrequest">Schedule My Service</Button>
->>>>>>> main
         </Col>
       </Row>
     </Container>
