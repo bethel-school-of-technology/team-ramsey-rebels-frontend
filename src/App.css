@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+h2 {
+  color: #651fff;
+  justify-content: center;
+}
+
+.footer-p {
+  color: whitesmoke;
+=======
 * {
   background-color: #3b3b3b;
   color: whitesmoke;
@@ -14,6 +23,7 @@ h2 {
 
 .mechnav{
   align-items: flex-start;
+>>>>>>> main
 }
 
 .margin{

@@ -113,7 +113,11 @@ export default class NewRequest extends Component {
       <div className="submit-form">
         <Navigation />
         <div>
+<<<<<<< HEAD
+          <h2>New Service Request</h2>
+=======
           <h1>Request your service here:</h1>
+>>>>>>> main
         </div>
         <Container>
           <div className="form-group">
@@ -123,6 +127,10 @@ export default class NewRequest extends Component {
                 <label htmlFor="fullName">Full Name</label>
                 <input
                   type="text"
+<<<<<<< HEAD
+                  placeholder="First and Last Name"
+=======
+>>>>>>> main
                   className="form-control"
                   id="fullName"
                   required
@@ -142,6 +150,10 @@ export default class NewRequest extends Component {
                 <label htmlFor="email">Email</label>
                 <input
                   type="email"
+<<<<<<< HEAD
+                  placeholder="example@example.com"
+=======
+>>>>>>> main
                   className="form-control"
                   id="email"
                   required
@@ -160,6 +172,10 @@ export default class NewRequest extends Component {
                 <label htmlFor="phone">Phone</label>
                 <input
                   type="phone"
+<<<<<<< HEAD
+                  placeholder="(000)-(000)-(0000)"
+=======
+>>>>>>> main
                   className="form-control"
                   id="phone"
                   required
@@ -178,6 +194,10 @@ export default class NewRequest extends Component {
                 <label htmlFor="location">Location</label>
                 <input
                   type="text"
+<<<<<<< HEAD
+                  placeholder="Where Is Your Vehicle?"
+=======
+>>>>>>> main
                   className="form-control"
                   id="location"
                   required
@@ -196,6 +216,10 @@ export default class NewRequest extends Component {
                 <label htmlFor="vehicle">Vehicle Make and Model</label>
                 <input
                   type="text"
+<<<<<<< HEAD
+                  placeholder="i.e. Ford Focus"
+=======
+>>>>>>> main
                   className="form-control"
                   id="vehicle"
                   required
@@ -214,6 +238,10 @@ export default class NewRequest extends Component {
                 <label htmlFor="serviceType">Type of Service</label>
                 <input
                   type="text"
+<<<<<<< HEAD
+                  placeholder="Description of Service"
+=======
+>>>>>>> main
                   className="form-control"
                   id="serviceType"
                   required
@@ -225,10 +253,17 @@ export default class NewRequest extends Component {
               <Col></Col>
             </Row>
           </div>
+<<<<<<< HEAD
+          <Button onClick={this.saveRequest} className="btn btn-secondary">
+            Submit
+          </Button>
+        </Container>
+=======
         </Container>
         <Button onClick={this.saveRequest} className="btn btn-success">
           Submit
         </Button>
+>>>>>>> main
       </div>
     );
   }
