@@ -10,7 +10,11 @@ function Success() {
         Your request has been submitted! Our elite mechanics are heading your
         way now.
       </h3>
+      <div>
+              <img src="https://user-images.githubusercontent.com/11351528/51387695-f564d000-1b4c-11e9-817d-5e6280f997d0.png" id="check"/>
+      </div>
     </div>
+    
   );
 }
 
