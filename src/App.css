@@ -3,6 +3,12 @@ h2 {
   justify-content: center;
 }
 
+p {
+  text-align: center;
+}
+
+
+
 .footer-p {
   color: whitesmoke;
   text-align: center;
