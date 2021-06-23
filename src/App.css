@@ -8,6 +8,14 @@ h2 {
   text-align: center;
 }
 
+body {
+  background-image: url("https://themustangsource.com/wp-content/uploads/2016/11/the-grand-tour-mustang-opening-scene-4.png");
+  height: 600px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .request, #submit, h2, h1, h3, .refresh, .requests {
   text-align: center;
 }
