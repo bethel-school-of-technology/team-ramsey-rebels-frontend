@@ -3,20 +3,22 @@ h2 {
   justify-content: center;
 }
 
+.comp-content {
+  margin-top: 25px;
+}
+
 p {
   text-align: center;
 }
-
-
 
 .footer-p {
   color: whitesmoke;
   text-align: center;
 }
 
-body {
-  background-image: url("https://themustangsource.com/wp-content/uploads/2016/11/the-grand-tour-mustang-opening-scene-4.png");
-  height: 600px; 
+.landing-bg {
+  background-image: url("https://www.motorbiscuit.com/wp-content/uploads/2020/04/2020-Mustang-Shelby-GT500.jpeg");
+  height: 750px; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

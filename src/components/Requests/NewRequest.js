@@ -112,9 +112,8 @@ export default class NewRequest extends Component {
     return (
       <div className="submit-form">
         <Navigation />
-        <div className="request">
+        <br/>
           <h2>New Service Request</h2>
-        </div>
         <Container>
           <div className="form-group">
             <Row>

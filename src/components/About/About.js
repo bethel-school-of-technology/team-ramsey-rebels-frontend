@@ -5,6 +5,7 @@ import { Container, Row, Col, Image, Button } from "react-bootstrap";
 const About = () => (
   <div>
     <Navigation />
+    <br/>
     <Container>
       <Row>
         <Col>

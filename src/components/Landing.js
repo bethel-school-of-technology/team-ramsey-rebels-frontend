@@ -6,7 +6,7 @@ const Landing = () => (
   <div>
     <Navigation />
     <Container>
-      
+      <div className="landing-bg"></div>
     </Container>
   </div>
 );
