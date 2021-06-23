@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import RequestDataService from "../../services/request.service";
 import Navigation from "../Nav/Navigation";
-import { Container, Col, Row, Button } from "react-bootstrap";
+import { Container, Col, Row, Button, Card } from "react-bootstrap";
 
 export default class NewRequest extends Component {
   constructor(props) {
@@ -112,9 +112,14 @@ export default class NewRequest extends Component {
     return (
       <div className="submit-form">
         <Navigation />
-        <br/>
-          <h2>New Service Request</h2>
+        <br />
+        <br />
         <Container>
+        <Card text="dark" bg="light" border="dark">
+          <Card.Header><h2>New Service Request</h2></Card.Header>
+          <Card.Body>
+            <Card.Text>
+            <Container>
           <div className="form-group">
             <Row>
               <Col></Col>
@@ -232,10 +237,14 @@ export default class NewRequest extends Component {
           </div>
         </Container>
         <div id="submit">
-        <Button onClick={this.saveRequest} className="btn btn-secondary">
+          <Button onClick={this.saveRequest} className="btn btn-success">
             Submit
-        </Button>
+          </Button>
         </div>
+            </Card.Text>
+          </Card.Body>
+        </Card>
+        </Container>
       </div>
     );
   }

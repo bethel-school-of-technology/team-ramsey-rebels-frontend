@@ -23,6 +23,8 @@ function Admin() {
   return (
     <div>
       <Navigation />
+      <br />
+      <br />
       <h2>Update service requests here:</h2>
       <div className="refresh">
         <Button variant="success" onClick={refreshPage}>
