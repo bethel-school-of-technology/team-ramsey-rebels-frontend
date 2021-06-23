@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 const Footer = () => (
   <div className="footer">
-    <Button href="/admin" className="btn btn-light">
+    <Button href="/adminlogin" className="btn btn-light">
       Admin
     </Button>
   </div>
