@@ -4,9 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 const Footer = () => (
   <div className="footer">
-    <Button href="/adminlogin" className="btn btn-light">
-      Admin
-    </Button>
+    <p>Copyright || Hours: Monday - Friday from 8am to 6pm</p>
   </div>
 );
 

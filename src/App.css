@@ -1,27 +1,41 @@
+h1 {
+  color: whitesmoke;
+}
+
 h2 {
-  color: #651fff;
+  color: #6918b4;
   justify-content: center;
+}
+
+body {
+  background-image: url("https://media.istockphoto.com/vectors/black-and-white-background-with-glossy-violet-stripes-vector-id1301128752?b=1&k=6&m=1301128752&s=170667a&w=0&h=zg9G5E-GuloN-2oEnYq15z4D-56b808HuRNBOrILPQc=");
+  height: 900px;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .comp-content {
   margin-top: 25px;
 }
 
-p {
+p, .req-card {
   text-align: center;
 }
 
-.footer-p {
-  color: whitesmoke;
-  text-align: center;
+.nav {
+  padding: 10px;
 }
 
 .landing-bg {
-  background-image: url("https://www.motorbiscuit.com/wp-content/uploads/2020/04/2020-Mustang-Shelby-GT500.jpeg");
-  height: 750px; 
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/364/836/964/car-ford-mustang-the-grand-tour-gt350r-wallpaper-preview.jpg");
+  height: 700px; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-color: black;
+  border-style: groove;
 }
 
 .request, #submit, h2, h1, h3, .refresh, .requests {

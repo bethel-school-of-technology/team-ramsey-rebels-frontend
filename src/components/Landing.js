@@ -5,9 +5,10 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 const Landing = () => (
   <div>
     <Navigation />
-    <Container>
+    <br />
+    <br />
+    <h1>Welcome to MechanicNow!</h1>
       <div className="landing-bg"></div>
-    </Container>
   </div>
 );
 

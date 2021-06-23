@@ -9,6 +9,8 @@ export default class NewRequest extends Component {
     return (
       <div className="submit-form">
         <Navigation />
+        <br />
+        <br />
         <div className="request">
           <h2>Hello, Admin</h2>
         </div>
