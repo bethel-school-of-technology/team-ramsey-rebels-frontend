@@ -1,8 +1,8 @@
-h1 {
+h1, h3 {
   color: whitesmoke;
 }
 
-h2 {
+h2, h5 {
   color: #6918b4;
   justify-content: center;
 }
