@@ -1,6 +1,14 @@
 import React from "react";
 import Navigation from "../Nav/Navigation";
-import { Container, Card, Row, Col, Image, Button } from "react-bootstrap";
+import {
+  Carousel,
+  Container,
+  Card,
+  Row,
+  Col,
+  Image,
+  Button,
+} from "react-bootstrap";
 
 const About = () => (
   <div>
@@ -16,13 +24,10 @@ const About = () => (
           <Card.Title></Card.Title>
           <Card.Text>
             <p>
-              Thanks for choosing MechanicNow! We are a full service mobile
-              mechanic service that comes to you. We are highly qualified in
-              muffler work, body repair, and lube services. You can't find
-              anyone who will give you a better overall experience and make you
-              feel good when it's all over. Plus, you won't find anyone who
-              works faster! We do our jobs while you work, so you won't even
-              know what just happened.
+              We are a full service mobile mechanic shop that comes to you. We
+              are highly qualified in muffler work, body repair, lube services
+              and more. You can't find anyone who will give you a better overall
+              experience. See what people are saying on our testomonials page!
             </p>
           </Card.Text>
         </Card.Body>
