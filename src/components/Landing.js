@@ -1,14 +1,25 @@
 import React from "react";
 import Navigation from "./Nav/Navigation";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 const Landing = () => (
-  <div>
+  <div className="landing-bg w-100 text-center mt-3">
     <Navigation />
     <br />
     <br />
-    <h1>Welcome to MechanicNow!</h1>
-      <div className="landing-bg"></div>
+    <h1>Welcome to MechanicNow!</h1> 
+    <br /> 
+    <style type="text/css">
+    {`
+    .btn-flat {
+      background-color: #6918b4;
+      color: white;
+    }
+    `}
+  </style>
+        <Button variant="flat" href="/newrequest">
+        New Service Request!
+        </Button>
   </div>
 );
 

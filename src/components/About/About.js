@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "../Nav/Navigation";
-import { Container, Card, Row, Col, Image, Button } from "react-bootstrap";
+import { Container, Card } from "react-bootstrap";
 
 const About = () => (
   <div>
