@@ -23,8 +23,8 @@ function Success() {
         </Card>
       </Container>
       
+
     </div>
-    
   );
 }
 
