@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "./Nav/Navigation";
-import { Container, Row, Col, Image, Carousel, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Carousel, Button } from "react-bootstrap";
 
 const Landing = () => (
   <div>
