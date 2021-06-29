@@ -3,7 +3,7 @@ import Navigation from "./Nav/Navigation";
 import { Container, Row, Col, Image, Carousel, Button } from "react-bootstrap";
 
 const Landing = () => (
-  <div className="landing-bg w-100 text-center mt-3">
+  <div>
     <Navigation />
     <br />
     <br />
