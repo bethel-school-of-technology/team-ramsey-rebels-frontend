@@ -1,6 +1,13 @@
 import React from "react";
 import Navigation from "../Nav/Navigation";
-import { Card, Container } from "react-bootstrap";
+import {
+  Card,
+  CardGroup,
+  Container,
+  Image,
+  Jumbotron,
+  Button,
+} from "react-bootstrap";
 
 const Contact = () => {
   return (
@@ -8,21 +15,56 @@ const Contact = () => {
       <Navigation />
       <br />
       <br />
-      <Container>
+      <Jumbotron>
+        <Container>
+        <h2>Contact Us</h2>
+          <p>Rain, snow or shine, we'll be sure that your car is fine.</p>
+        </Container>
+      </Jumbotron>
+      <br />
+      <CardGroup>
         <Card>
-          <Card.Header>
-            <h2>Contact Us</h2>
-          </Card.Header>
+          <Card.Img variant="top"/>
           <Card.Body>
-            <Card.Title></Card.Title>
+            <Card.Title>Card title</Card.Title>
             <Card.Text>
-              <p>Rain, snow or shine, we'll be sure that your car is fine.</p>
-              <p>Please send all complaints to Ben Cunningham: 615.645.6015</p>
-              <p>Hours of operation: Tuesdays 9-10 am</p>
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
             </Card.Text>
           </Card.Body>
+          <Card.Footer>
+            <small className="text-muted">Last updated 3 mins ago</small>
+          </Card.Footer>
         </Card>
-      </Container>
+        <Card>
+          <Card.Img variant="top"/>
+          <Card.Body>
+            <Card.Title>Card title</Card.Title>
+            <Card.Text>
+              This card has supporting text below as a natural lead-in to
+              additional content.{" "}
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <small className="text-muted">Last updated 3 mins ago</small>
+          </Card.Footer>
+        </Card>
+        <Card>
+          <Card.Img variant="top" />
+          <Card.Body>
+            <Card.Title>Card title</Card.Title>
+            <Card.Text>
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action.
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <small className="text-muted">Last updated 3 mins ago</small>
+          </Card.Footer>
+        </Card>
+      </CardGroup>
     </div>
   );
 };
