@@ -7,15 +7,6 @@ h2, h5 {
   justify-content: center;
 }
 
-body {
-  background-image: url("./components/images/Screen\ Shot\ 2021-06-26\ at\ 3.12.26\ PM.png");
-  height: 100%;
-  
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .comp-content {
   margin-top: 25px;
 }
@@ -26,16 +17,6 @@ p, .req-card {
 
 .nav {
   padding: 10px;
-}
-
-.landing-bg {
-  background-image: url("https://c4.wallpaperflare.com/wallpaper/364/836/964/car-ford-mustang-the-grand-tour-gt350r-wallpaper-preview.jpg");
-  height: 700px; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-color: black;
-  border-style: groove;
 }
 
 .request, #submit, h2, h1, h3, .refresh, .requests {
