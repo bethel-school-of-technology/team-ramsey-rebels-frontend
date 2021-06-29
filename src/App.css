@@ -1,15 +1,38 @@
 h1, h3 {
   color: whitesmoke;
+  font-family: 'Meera Inimai', sans-serif;
 }
 
-h2, h5 {
+h2, h4, h5 {
   color: #6918b4;
   justify-content: center;
+  text-align: center;
+  font-family: 'Meera Inimai', sans-serif;
 }
 
-.carousel-one {
-  height: 300px;
+footer {
+  position: fixed;
 }
+
+p {
+  font-size: large;
+  font-family: 'Meera Inimai', sans-serif;
+}
+
+body {
+  background-image: url("./images/Screen\ Shot\ 2021-06-26\ at\ 3.12.26\ PM.png");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+/* .landing-div {
+  background-image: url("https://wallpapercave.com/wp/QFVGxmn.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
 
 .comp-content {
   margin-top: 25px;
@@ -20,7 +43,7 @@ p, .req-card {
 }
 
 .nav {
-  padding: 10px;
+  padding: 20px;
 }
 
 .request, #submit, h2, h1, h3, .refresh, .requests {
@@ -35,30 +58,10 @@ p, .req-card {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {

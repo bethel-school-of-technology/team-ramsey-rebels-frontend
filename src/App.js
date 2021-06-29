@@ -37,7 +37,6 @@ function App() {
         <PrivateRoute exact path="/admin" component={Admin}/>
         <Route path="/admin" component={Admin} />
       </Switch>
-      <Footer />
     </Router>
     </AuthProvider>
   );
