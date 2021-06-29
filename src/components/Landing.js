@@ -7,7 +7,7 @@ const Landing = () => (
     <Navigation />
     <br />
     <br />
-    <Container>
+    <div className="carousel-one">
       <Carousel>
         <Carousel.Item>
           <img
@@ -16,12 +16,12 @@ const Landing = () => (
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>Welcome to MechanicNow!</h3>
+            <h3><i>Welcome to MechanicNow!</i></h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <Carousel.Caption>
-            <h3>WE work while YOU work so your car is ready to go!</h3>
+            <h3><i>WE work while YOU work so your car...</i></h3>
           </Carousel.Caption>
           <img
             className="d-block w-100"
@@ -35,13 +35,12 @@ const Landing = () => (
             src="https://www.cnet.com/a/img/Lq0pr9izf6rW5zlt5BrCQ9Lq40g=/940x0/2019/10/25/9c965540-3447-48a8-b1e4-3a7caf42b58e/2020-ford-mustang-shelby-gt500-08.jpg"
             alt="Third slide"
           />
-
           <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3><i>is READY to GO!</i></h3>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-    </Container>
+    </div>
     <br />
     <br />
   </div>

@@ -7,6 +7,10 @@ h2, h5 {
   justify-content: center;
 }
 
+.carousel-one {
+  height: 300px;
+}
+
 .comp-content {
   margin-top: 25px;
 }
