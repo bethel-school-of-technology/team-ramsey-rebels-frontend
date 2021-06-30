@@ -34,10 +34,6 @@ export default function Admin() {
     fetchData();
   }, []);
 
-  const refreshPage = () => {
-    window.location.reload();
-  };
-
  
   return (
     <>
@@ -54,13 +50,8 @@ export default function Admin() {
           <Card.Body>
             <Card.Title className="w-100 text-center mt-2">{currentUser && currentUser.email}</Card.Title>
             <Card.Text>
-              <div className="refresh">
-                <Button variant="success" onClick={refreshPage}>
-                  Refresh Changes
-                </Button>
-              </div>
               <div className="w-100 text-center mt-2">
-                <Button variant="link" onClick={handleLogout}>Log Out</Button>
+                <Button variant="outline-dark" onClick={handleLogout}>Log Out</Button>
               </div>
               <hr />
               <div className="requests">
@@ -69,9 +60,6 @@ export default function Admin() {
                     <AdminInput request={request} />
                   </div>
                 ))}
-                <Button variant="success" onClick={refreshPage}>
-                  Refresh Changes
-                </Button>
               </div>
             </Card.Text>
           </Card.Body>
