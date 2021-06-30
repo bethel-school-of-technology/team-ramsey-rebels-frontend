@@ -15,7 +15,9 @@ const AdminInput = ({ request }) => {
 
   const onDelete = () => {
     const db = firebase.firestore();
-    db.collection("requests").doc(request.id).delete();
+    db.collection("requests").doc(request.id)
+    .delete()
+    .then(() => window.location.reload());
   };
 
   return (
@@ -44,7 +46,7 @@ const AdminInput = ({ request }) => {
                   setServiceType(e.target.value);
                 }}
               />
-              <Button variant="warning" onClick={onUpdate}>
+              <Button variant="info" onClick={onUpdate}>
                 Update
               </Button>
               <br />
