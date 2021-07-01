@@ -14,7 +14,7 @@ const Navigation = () => (
             <Nav.Link href="/newrequest">New Service</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/contactus">Contact Us</Nav.Link>
-            <Nav.Link href="/adminlogin">Admin <VscAccount/></Nav.Link>
+            <Nav.Link href="/admin">Admin <VscAccount/></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
