@@ -83,7 +83,7 @@ const Landing = () => (
           <Card.Img />
           <Card.Body>
             <Card.Title>
-              <h4><u>List of Services</u></h4>
+              <h4><b>List of Services</b></h4>
             </Card.Title>
             <Card.Text>
               <p>
@@ -124,7 +124,7 @@ const Landing = () => (
           <Card.Img />
           <Card.Body>
             <Card.Title>
-              <h4><u>Vehicle Makes</u></h4>
+              <h4><b>Vehicle Makes</b></h4>
             </Card.Title>
             <Card.Text>
               <p>

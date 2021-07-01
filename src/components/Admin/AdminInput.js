@@ -1,25 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import firebase from "firebase";
 import Button from "react-bootstrap/Button";
-import { Container, Card } from "react-bootstrap";
+import { Container, Card, Alert } from "react-bootstrap";
 
 const AdminInput = ({ request }) => {
   const [serviceType, setServiceType] = React.useState(request.serviceType);
+  const [error, setError] = useState("")
 
   const onUpdate = () => {
     const db = firebase.firestore();
     db.collection("requests")
       .doc(request.id)
       .set({ ...request, serviceType });
+      
+        return setError("Updated successfully!")
   };
 
   const onDelete = () => {
-    const db = firebase.firestore();
+    var answer = window.confirm("Are you sure you want to delete me?")
+    if (answer) {
+      const db = firebase.firestore();
     db.collection("requests").doc(request.id)
     .delete()
     .then(() => window.location.reload());
+    }
   };
 
+
+  
   return (
     <>
       <br />
@@ -39,21 +47,21 @@ const AdminInput = ({ request }) => {
               <p>
                 {request.vehicle} | {request.location}
               </p>
-              Service Needed:{" "}
-              <input
+              Service Details:{" "} <br />
+              <textarea
                 value={serviceType}
                 onChange={(e) => {
                   setServiceType(e.target.value);
                 }}
-              />
-              <Button variant="info" onClick={onUpdate}>
+              /> <br />
+              <Button variant="info" onClick={onUpdate} style={{marginRight: "20px"}}>
                 Update
-              </Button>
-              <br />
-              <br />
+              </Button>              
               <Button variant="danger" onClick={onDelete}>
                 Delete
               </Button>
+              <br />
+              {error && <Alert style= {{marginTop: "10px"}} variant="success">{error}</Alert>}
             </Card.Text>
           </Card.Body>
         </Card>

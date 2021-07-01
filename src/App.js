@@ -12,7 +12,6 @@ import Admin from './components/Admin/Admin';
 import Success from './components/Requests/Success';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
-import Footer from './components/Footer';
 import AdminSignUp from './components/AdminSignUp/AdminSignUp'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AdminLogIn from './components/AdminLogIn/AdminLogIn';
@@ -27,7 +26,6 @@ function App() {
       <Route exact path="/" component={Landing} />
       <Route path="/newrequest" component={NewRequest} />
       <Route path="service" component={NewRequest} />
-      <Route path="/landing" component={Landing} />
       <Route path="/success" component={Success} />
       <Route path="/about" component={About} />
       <Route path="/contactus" component={Contact} />

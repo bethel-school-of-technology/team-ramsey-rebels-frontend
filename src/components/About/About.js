@@ -1,17 +1,12 @@
 import React from "react";
 import Navigation from "../Nav/Navigation";
 import {
-  Carousel,
   Container,
   Card,
   CardGroup,
-  Row,
-  Col,
-  Image,
-  Button,
 } from "react-bootstrap";
 import { FaOilCan, FaGasPump } from "react-icons/fa";
-import { GiCarWheel, GiFlatTire, GiGears } from "react-icons/gi";
+import { GiCarWheel } from "react-icons/gi";
 
 const About = () => (
   <div>
