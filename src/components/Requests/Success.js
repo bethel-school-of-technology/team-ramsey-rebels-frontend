@@ -19,7 +19,7 @@ function Success() {
         <div>
                 <img src="https://user-images.githubusercontent.com/11351528/51387695-f564d000-1b4c-11e9-817d-5e6280f997d0.png" id="check" alt="checkmark"/>
         </div>
-        <Button className="btn btn-success" href="/landing"> Return Home </Button>
+        <Button className="btn btn-success" href="/"> Return Home </Button>
         </Card>
       </Container>
       
