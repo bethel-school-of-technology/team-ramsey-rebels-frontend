@@ -31,7 +31,7 @@ export default function Login() {
   }
 
   return (
-    <> 
+    <div className="login-div"> 
     <Navigation />
     <AuthProvider>
     <Container className="d-flex align-items-center justify-content-center" style={{ minHeight: "100vh" }}>
@@ -50,19 +50,15 @@ export default function Login() {
                 <Form.Control type="password" ref={passwordRef}required/>
             </Form.Group>
             <Button disabled={loading} className="w-100"type="submit">Log In</Button>
-            
           </Form>
       </Card.Body>
-     
       <div className="w-100 text-center mb-3">
         Wanna be an Admin? <Link to="/AdminSignUp">Sign Up</Link>
       </div>
-    
     </Card>
-    
     </div>
     </Container>
     </AuthProvider>
-    </>
+    </div>
   )
 }
