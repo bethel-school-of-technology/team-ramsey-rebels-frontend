@@ -36,7 +36,7 @@ export default function Signup() {
   }
 
   return (
-    <> 
+    <div className="signup-div"> 
     <Navigation />
     <AuthProvider>
     <Container className="d-flex align-items-center justify-content-center" style={{ minHeight: "100vh" }}>
@@ -72,6 +72,6 @@ export default function Signup() {
     </div>
     </Container>
     </AuthProvider>
-    </>
+    </div>
   )
 }

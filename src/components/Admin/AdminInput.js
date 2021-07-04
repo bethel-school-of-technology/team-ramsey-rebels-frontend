@@ -5,69 +5,77 @@ import { Container, Card, Alert } from "react-bootstrap";
 
 const AdminInput = ({ request }) => {
   const [serviceType, setServiceType] = React.useState(request.serviceType);
-  const [error, setError] = useState("")
+  const [error, setError] = useState("");
 
   const onUpdate = () => {
     const db = firebase.firestore();
     db.collection("requests")
       .doc(request.id)
       .set({ ...request, serviceType });
-      
-        return setError("Updated successfully!")
+
+    return setError("Updated successfully!");
   };
 
   const onDelete = () => {
-    var answer = window.confirm("Are you sure you want to delete me?")
+    var answer = window.confirm("Are you sure you want to delete me?");
     if (answer) {
       const db = firebase.firestore();
-    db.collection("requests").doc(request.id)
-    .delete()
-    .then(() => window.location.reload());
+      db.collection("requests")
+        .doc(request.id)
+        .delete()
+        .then(() => window.location.reload());
     }
   };
 
-
-  
   return (
-    <>
-      <br />
-      <Container>
+    <div>
+      <Container
+        className="d-flex align-items-center justify-content-center"
+        style={{ minWidth: "300px", marginTop: "30px" }}
+      >
         <Card>
-          <Card.Header>
-            <b>Request ID: </b>
-            {request.id}
-          </Card.Header>
           <Card.Body>
-            <Card.Title>
-              <p>
-                {request.fullName} | {request.email} | {request.phone}
-              </p>
-            </Card.Title>
+            <Card.Title>{request.fullName}</Card.Title>
+            <hr />
             <Card.Text>
-              <p>
-                {request.vehicle} | {request.location}
-              </p>
-              Service Details:{" "} <br />
+              <p>Email: {request.email}</p>
+              <p>Phone: {request.phone}</p>
+              <p>Vehicle: {request.vehicle}</p>
+              <p>Location: {request.location}</p>
+              <hr />
+              <p>Service Details:</p>
               <textarea
                 value={serviceType}
                 onChange={(e) => {
                   setServiceType(e.target.value);
                 }}
-              /> <br />
-              <Button variant="info" onClick={onUpdate} style={{marginRight: "20px"}}>
+              />{" "}
+              <br />
+              <Button
+                variant="info"
+                onClick={onUpdate}
+                style={{ marginRight: "20px" }}
+              >
                 Update
-              </Button>              
+              </Button>
               <Button variant="danger" onClick={onDelete}>
                 Delete
               </Button>
               <br />
-              {error && <Alert style= {{marginTop: "10px"}} variant="success">{error}</Alert>}
+              {error && (
+                <Alert style={{ marginTop: "10px" }} variant="success">
+                  {error}
+                </Alert>
+              )}
             </Card.Text>
+            <Card.Footer>
+              <b>Request ID: </b>
+              {request.id}
+            </Card.Footer>
           </Card.Body>
         </Card>
       </Container>
-      <br />
-    </>
+    </div>
   );
 };
 
