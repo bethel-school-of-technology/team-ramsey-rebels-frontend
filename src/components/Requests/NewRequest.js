@@ -4,7 +4,6 @@ import Navigation from "../Nav/Navigation";
 import Footer from "../Footer";
 import { Container, Col, Row, Button, Card, Jumbotron } from "react-bootstrap";
 
-
 export default class NewRequest extends Component {
   constructor(props) {
     super(props);

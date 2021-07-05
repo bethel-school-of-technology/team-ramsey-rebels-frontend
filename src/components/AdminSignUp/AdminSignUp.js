@@ -76,7 +76,7 @@ export default function Signup() {
               </Card.Body>
 
               <div className="w-100 text-center mb-3">
-                Already an Admin? <Link to="/AdminLogin">Log In</Link>
+                Already an Admin? <Link to="/adminlogin">Log In</Link>
               </div>
             </Card>
           </div>
