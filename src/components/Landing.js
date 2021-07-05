@@ -19,6 +19,7 @@ import {
   SiToyota,
 } from "react-icons/si";
 
+
 const Landing = () => (
   <div className="landing-div">
     <Navigation />

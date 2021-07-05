@@ -2,6 +2,7 @@ import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { VscTools, VscAccount, VscHome } from "react-icons/vsc";
 
+
 const Navigation = () => (
   <div className="nav">
     <Navbar collapseOnSelect fixed="top" expand="md" bg="dark" variant="dark">

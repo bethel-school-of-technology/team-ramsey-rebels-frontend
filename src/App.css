@@ -25,6 +25,7 @@ p {
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -32,6 +33,7 @@ p {
 #req-div,
 .about-div,
 .login-div,
+.signup-div,
 #login-container,
 .success-div {
   background-image: url("app.img/Screen\ Shot\ 2021-06-26\ at\ 3.12.26\ PM.png");
@@ -39,6 +41,7 @@ p {
   min-width: 100%;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -55,8 +58,7 @@ p {
   margin-bottom: 45px;
 }
 
-.nav,
-.success-card {
+.nav {
   padding: 20px;
   display: flex;
   justify-content: center;

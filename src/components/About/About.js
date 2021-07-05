@@ -5,6 +5,7 @@ import { Container, Card, CardGroup, Jumbotron } from "react-bootstrap";
 import { FaOilCan, FaGasPump } from "react-icons/fa";
 import { GiCarWheel } from "react-icons/gi";
 
+
 const About = () => (
   <div className="about-div">
     <Navigation />
@@ -13,7 +14,8 @@ const About = () => (
       <Card body className="about-h2">
         <h2>About</h2>
       </Card>
-      <br />
+    </Container>
+    <Container>
       <CardGroup>
         <Card>
           <Card.Img
@@ -81,7 +83,7 @@ const About = () => (
     <br />
     <br />
     <Jumbotron></Jumbotron>
-    <Footer/>
+    <Footer />
   </div>
 );
 
