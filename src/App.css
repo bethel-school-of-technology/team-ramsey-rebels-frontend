@@ -48,9 +48,13 @@ p {
 .contact-h2,
 .about-h2,
 .req-h2 .req-card,
-.req-container,
+
 .admin-container {
   margin: 25px;
+}
+
+.req-container {
+  margin-bottom: 25px;
 }
 
 .service-card,
