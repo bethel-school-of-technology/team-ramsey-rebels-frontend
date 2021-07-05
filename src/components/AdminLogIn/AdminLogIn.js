@@ -62,6 +62,7 @@ export default function Login() {
           </div>
         </Container>
       </AuthProvider>
+      <Footer />
     </div>
   );
 }
