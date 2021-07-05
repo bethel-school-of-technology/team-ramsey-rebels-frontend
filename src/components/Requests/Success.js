@@ -4,6 +4,7 @@ import Footer from "../Footer";
 import { Button, Card, Container, Image } from "react-bootstrap";
 import { ImCheckmark } from "react-icons/im";
 
+
 function Success() {
   return (
     <div className="success-div">

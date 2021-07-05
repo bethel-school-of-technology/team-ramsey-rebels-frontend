@@ -5,6 +5,7 @@ import { Container, Card, CardGroup, Jumbotron } from "react-bootstrap";
 import { FaOilCan, FaGasPump } from "react-icons/fa";
 import { GiCarWheel } from "react-icons/gi";
 
+
 const About = () => (
   <div className="about-div">
     <Navigation />

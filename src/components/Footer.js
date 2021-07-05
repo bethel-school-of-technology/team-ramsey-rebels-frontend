@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { SiFacebook, SiInstagram, SiTwitter } from "react-icons/si";
 
+
 const Footer = () => (
   <div className="footer">
     <Container>

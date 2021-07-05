@@ -6,6 +6,7 @@ import mh from "../images/mh.thumbnail.png";
 import dz from "../images/dz.thumbnail.png";
 import { Card, CardGroup, Container, Jumbotron } from "react-bootstrap";
 
+
 const Contact = () => (
   <div className="contact-div">
     <Navigation />
