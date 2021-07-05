@@ -1,7 +1,8 @@
 import React from "react";
 import Navigation from "../Nav/Navigation";
 import Footer from "../Footer";
-import { Button, Card } from "react-bootstrap";
+import { Button, Card, Container, Image } from "react-bootstrap";
+import { ImCheckmark } from "react-icons/im";
 
 function Success() {
   return (
@@ -9,24 +10,28 @@ function Success() {
       <Navigation />
       <br />
       <br />
-      <Card>
-        <h2>Success!</h2>
-        <h4>
-          Your request has been submitted! Our elite mechanics are heading your
-          way now.
-        </h4>
+      <Container style={{ minWidth: "300px", marginTop: "30px" }}>
         <br />
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_SwvznR7Y9O5don6my_0JnahAC_6lBKEHYA&usqp=CAU"
-          id="check"
-          alt="checkmark"
-        />
-        <br />
-        <Button className="btn btn-success" href="/">
-          {" "}
-          Return Home{" "}
-        </Button>
-      </Card>
+        <Card>
+          <br />
+          <Card.Header>
+            <h2>Success!</h2>
+          </Card.Header>
+          <Card.Body>
+            <h4><ImCheckmark size={42}/></h4>
+            <br />
+            <h4>
+              Your request has been submitted! Our elite mechanics are heading
+              your way now.
+            </h4>
+          </Card.Body>
+          <br />
+          <Button className="btn btn-success" href="/">
+            {" "}
+            Return Home{" "}
+          </Button>
+        </Card>
+      </Container>
       <Footer />
     </div>
   );
