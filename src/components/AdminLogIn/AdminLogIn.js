@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import Navigation from "../Nav/Navigation";
+import Footer from "../Footer";
 import { Container, Button, Form, Card, Alert } from "react-bootstrap";
 import { useAuth, AuthProvider } from "../../contexts/AuthContext";
 import { Link, useHistory } from "react-router-dom"
@@ -56,6 +57,7 @@ export default function Login() {
     </Card>
     </div>
     </Container>
+    <Footer />
     </AuthProvider>
     </div>
   )
